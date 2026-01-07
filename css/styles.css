@@ -1,0 +1,96 @@
+a 
+{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+
+a img 
+{
+    vertical-align: middle;
+    border-radius: 10px;
+    border: 3px solid gold;
+    padding: 5px;
+    background-color: white;
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+
+    margin-bottom: 20px;  
+    margin-right: 20px;
+}
+
+a:hover img 
+{
+    opacity: 0.8;
+    cursor: pointer;
+    border-color: #ffd700;
+}
+
+h1 
+
+{
+  background-color: rgba(255, 215, 0, 0.3);
+  border: 3px dashed gold;                
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+h2 
+{
+  background-color: #3b2f2f;  
+  border: 2px solid gold;                
+  display: block;                  
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: gold;
+  margin: 20px auto;
+  width: fit-content;                        
+}
+
+iframe 
+{
+  border: 3px solid gold;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table 
+{
+    border-collapse: collapse;
+}
+
+td, th 
+{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bio-table {
+    border-collapse: collapse;
+}
+
+.bio-table td {
+    padding: 12px 20px;
+    border: 1px solid white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover hanya cell dalam info-table */
+.bio-table td:hover {
+    background-color: rgba(218, 165, 32, 0.6); /* goldenrod transparent */
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
