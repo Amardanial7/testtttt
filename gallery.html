@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - MUHAMMAD AMAR DANIAL</title>
+    <style>
+        body {
+            background-image: url('Animation/gallery.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Trebuchet MS, Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: gold;
+            margin-bottom: 20px;
+        }
+
+        p.intro {
+            width: 70%;
+            margin: 0 auto 40px auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #f0e68c;
+        }
+
+        .gallery-container {
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: rgba(75, 0, 0, 0.7);
+            border: 3px solid gold;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 12px;
+            font-weight: bold;
+            color: gold;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Navigation buttons */
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+            color: gold;
+            font-weight: bold;
+            border: 2px solid gold;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            color: lightgray;
+            font-size: 0.9em;
+        }
+    </style>
+
+      <link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+<body>
+
+<h1>Gallery</h1>
+
+<p class="intro" style=" background-color: rgba(255, 215, 0, 0.3); padding: 5px;">
+    📸 Welcome to my personal gallery where I showcase memorable moments from my journey.
+    Browse through the images below to get a glimpse of the experiences I've had and the things I've created during 2025.
+</p>
+
+<a href="index.html" title="Home">
+        <img src="button/Homebutton.png" alt="Home" />
+    </a>
+    <a href="about.html" title="About">
+        <img src="button/aboutbutton.png" alt="About" />
+    </a>
+    <a href="education.html" title="Education">
+        <img src="button/Educationbutton.png" alt="Education" />
+    </a>
+    <a href="experience.html" title="Experience">
+        <img src="button/Experiencebutton.png" alt="Experience" />
+    </a>
+    <a href="family.html" title="Family">
+        <img src="button/Familybutton.png" alt="Family" />
+    </a>
+    <a href="gallery.html" title="Gallery">
+        <img src="button/Gallerybutton.png" alt="Gallery" />
+    </a>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="images/moreh.jpg" alt="Moreh Pic" style="width: 100%; height: 90%;" />
+        <div class="gallery-caption">Moreh Vibe in Midnight</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/fasting.png" alt="fasting pic"/>
+        <div class="gallery-caption">Food preparation during fasting</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/breakfasting.jpg" alt="breakfasting pic" style="width: 100%; height: 90%;" />
+        <div class="gallery-caption">Waiting moment to break the fast</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/stadium.png" alt="Stadium view" style="width: 100%; height: 90%;"/>
+        <div class="gallery-caption">Football matches between Terengganu and Selangor</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/bundle.jpg" alt="bundle shop" style="width: 100%; height: 90%;"/>
+        <div class="gallery-caption">Hunting for rare bundle clothes</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/heandshe.jpg" alt="He&she pic" style="width: 100%; height: 90%;"/>
+        <div class="gallery-caption">Take a break at He&She after class</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 | Created for IMD318 Individual Project Assignment | MUHAMMAD AMAR DANIAL
+</footer>
+
+</body>
+</html>

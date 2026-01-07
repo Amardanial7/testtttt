@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Personal Website</title>
+
+    <style>
+        body 
+        {
+            background-image: url(images/blackred.jpg);
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 
+        {
+            color: gold;
+            font-family: Georgia;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* lebih jarak supaya button tak rapat */
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li img {
+            vertical-align: middle;
+            max-width: 120px; /* saiz lebih sesuai ikut button asal */
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid gold;
+            transition: opacity 0.3s ease;
+        }
+
+        nav ul li:hover img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        /* Submenu style */
+        nav ul li ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 2px solid gold;
+            border-radius: 8px;
+            padding: 10px 20px;
+            min-width: 180px;
+            color: lightyellow;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: left;
+            z-index: 100;
+        }
+
+        nav ul li:hover ul.submenu {
+            display: block;
+        }
+
+        nav ul li ul.submenu li {
+            margin-bottom: 6px;
+        }
+
+        nav ul li ul.submenu li:last-child {
+            margin-bottom: 0;
+        }
+
+    </style>
+
+    <script>
+        function changeBg(pic) {
+            document.body.style.backgroundImage = "url('" + pic + "')";
+        }
+    </script>
+
+      <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<iframe src="https://free.timeanddate.com/clock/ia74p6l0/n122/fn7/fcfff/tc990/ahl/ftbi/blt4/brt4/btt4/bbt4/pl14/pr14/pt5/pb5/tt0/tw0/tm1" frameborder="0" width="242" height="31" style="position: absolute; top: 10px; left: 10px;"></iframe>
+
+<p style="font-size:14px; text-decoration: underline;">
+Click the buttons on the right to change the background.
+</p>
+
+<button style="position:absolute; top:10px; right:10px; border:2px solid black;"
+onclick="changeBg('images/blackred.jpg')">
+Red
+</button>
+
+<button style="position:absolute; top:50px; right:10px; border:2px solid black;"
+onclick="changeBg('images/blueblack.jpg')">
+Blue
+</button>
+
+<h1>MUHAMMAD AMAR DANIAL BIN NAZAR</h1><br>
+
+<p style="border: 1px dashed red; color: lightyellow; display: inline-block; padding: 5px; background-color: rgba(218, 165, 32, 0.6);"><i>My Personal Website</i></p>
+
+<hr>
+
+<!-- Navigation menu with submenu -->
+<nav>
+    <ul>
+        <li>
+            <a href="about.html" title="About">
+                <img src="button/aboutbutton.png" alt="About">
+            </a>
+            <ul class="submenu">
+                <li>Biodata & Personal Info</li>
+                <li>Hobbies & Interests</li>
+                <li>Goals & Aspirations</li>
+            </ul>
+        </li>
+        <li>
+            <a href="education.html" title="Education">
+                <img src="button/Educationbutton.png" alt="Education">
+            </a>
+            <ul class="submenu">
+                <li>Schools Attended</li>
+                <li>Certificates</li>
+                <li>Achievements</li>
+            </ul>
+        </li>
+        <li>
+            <a href="experience.html" title="Experience">
+                <img src="button/Experiencebutton.png" alt="Experience">
+            </a>
+            <ul class="submenu">
+                <li>Schools Attended</li>
+                <li>Certificates</li>
+                <li>Achievements</li>
+            </ul>
+        </li>
+        <li>
+            <a href="family.html" title="Family">
+                <img src="button/Familybutton.png" alt="Family">
+            </a>
+            <!-- Kalau nak submenu, boleh tambah ul.submenu di sini -->
+        </li>
+        <li>
+            <a href="gallery.html" title="Gallery">
+                <img src="button/Gallerybutton.png" alt="Gallery">
+            </a>
+            <!-- Kalau nak submenu, boleh tambah ul.submenu di sini -->
+        </li>
+    </ul>
+</nav>
+
+<hr>
+
+<div style="text-align: center;">
+  <img src="images/Amar.jpg" width="200" height="267" style="display: block; margin: 0 auto 20px;">
+
+  <h2>Welcome to My Website</h2>
+
+  <p>This website is created using basic HTML, CSS and JavaScript only.</p>
+
+</div>
+
+<hr>
+
+<h2>Inspirational Quote</h2>
+
+<blockquote cite="https://medium.com/better-humans/99-inspiring-quotes-to-make-you-a-better-human-c7f62fcc50da"
+style="font-style: italic; font-size:16px; width:75%; margin:auto; color:lightyellow; line-height:1.6;">
+    “If you want to do this, if you want to play big, if you want to really impact lives,
+    you’ve got to face yourself. You’ve got to be courageous and willing to go all in and
+    address everything about you that is uncomfortable.”
+</blockquote>
+
+<p style="margin-top:10px; font-size:14px; color:lightgray;">
+    <b>Harry Lopez</b>
+</p>
+
+<hr>
+
+<p style="font-size:14px;">
+    This website is created for
+    <abbr title="INTRODUCTION TO WEB CONTENT MANAGEMENT AND DESIGN">IMD318</abbr>
+    course at
+    <abbr title="Universiti Teknologi MARA">UiTM</abbr>
+    using
+    <abbr title="HyperText Markup Language">HTML</abbr>,
+    <abbr title="Cascading Style Sheets">CSS</abbr>
+    and
+    <abbr title="JavaScript">JS</abbr>.
+</p>
+
+<hr>
+
+<p style="font-size:14px; color:lightgray;">
+    Fun HTML Element:
+</p>
+
+<p>
+    <bdo dir="rtl">Never give up on yourself</bdo>
+</p>
+
+<hr>
+
+<script>
+    {
+        alert("Assalamualaikum. \nWelcome to my Website Project \nIMD318 Individual Assignment")
+    }
+</script>
+
+<br><br>
+<audio id="bgmusic" loop>
+    <source src="Music/Ambient.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bgmusic').play()">▶️</button>
+<button id="muteBtn" onclick="muteMusic()">🔇</button>
+
+<br><br>
+
+<br>
+
+Volume:
+<input type="range" min="0" max="1" step="0.1"
+oninput="document.getElementById('bgmusic').volume = this.value">
+
+<br><br>
+
+<script>
+
+function muteMusic() {
+    var music = document.getElementById("bgmusic");
+    var btn = document.getElementById("muteBtn");
+
+    if (music.muted) {
+        music.muted = false;
+        btn.innerHTML = "🔇";
+    } else {
+        music.muted = true;
+        btn.innerHTML = "🔊";
+    }
+}
+</script>
+
+<hr>
+
+<p style="color: lightgray;">
+© 2025 | Created for IMD318 Individual Project Assignment
+</p>
+
+<hr>
+
+<p>
+    <a href="https://www.tiktok.com/@mlkinggamingx" target="_blank">
+        <img src="images/tiktok.png" alt="Tiktok" width="30">
+    </a>
+
+    <a href="https://www.youtube.com/@Amar-mg9pl" target="_blank">
+        <img src="images/yt.png" alt="Youtube" width="30">
+    </a>
+
+    <a href="mailto:amardanial100@gmail.com">
+        <img src="images/gmail.jpg" alt="Email" width="30">
+    </a>
+</p>
+
+</body>
+</html>

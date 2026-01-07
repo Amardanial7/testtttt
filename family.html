@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Family - MUHAMMAD AMAR DANIAL</title>
+
+    <style>
+        body 
+        {
+            background-image: url(images/blackredfamily.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: Trebuchet MS, Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 50px 20px 30px;
+            background: radial-gradient(circle at top, #1a1a5e, transparent);
+        }
+
+        header h1 {
+            color: gold;
+            font-size: 42px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 215, 0, 0.3);
+            border: 3px dashed gold;                
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        header p {
+            color: lightgray;
+            max-width: 700px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, gold, transparent);
+            width: 70%;
+            margin: 40px auto;
+        }
+
+        /* Section Card */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid gold;
+            border-radius: 18px;
+            padding: 30px;
+            width: 70%;
+            margin: 30px auto;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.1);
+        }
+
+        .card h2 {
+            color: gold;
+            margin-bottom: 15px;
+            background-color: #3b2f2f;  
+            border: 2px solid gold;                
+            display: block;                  
+            padding: 6px 16px;
+            border-radius: 6px;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .card p {
+            line-height: 1.8;
+            margin: auto;
+            max-width: 650px;
+        }
+
+        /* Table */
+        table {
+            width: 80%;
+            margin: 25px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid gold;
+            padding: 14px;
+        }
+
+        th {
+            background-color: darkolivegreen;
+            color: gold;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 215, 0, 0.08);
+        }
+
+        tr
+        {
+            background-color: darkgreen;
+        }
+
+        /* List */
+        ul {
+            width: 70%;
+            margin: auto;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Image */
+        .family-img {
+            margin-top: 35px;
+        }
+
+        .family-img img {
+            border: 4px solid gold;
+            border-radius: 20px;
+            max-width: 50%;
+            margin-bottom: 30px;
+            transition: transform 0.4s ease;
+        }
+
+        .family-img img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Quote */
+        .quote {
+            margin-top: 30px;
+            font-style: italic;
+            color: #ffeaa7;
+            font-size: 17px;
+        }
+
+        footer {
+            margin: 50px 0 20px;
+            color: lightgray;
+            font-size: 14px;
+        }
+
+        /* Navigation buttons like experience page */
+        a {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        a img {
+            vertical-align: middle;
+            border-radius: 10px;
+            border: 3px solid gold;
+            padding: 5px;
+            background-color: white;
+            transition: opacity 0.3s ease, border-color 0.3s ease;
+            margin-bottom: 20px;  
+            margin-right: 20px;
+        }
+
+        a:hover img {
+            opacity: 0.8;
+            cursor: pointer;
+            border-color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .card, table, ul {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Family</h1><br><br>
+    <p>
+        Family is the foundation of my life — shaping my values, guiding my decisions,
+        and supporting my journey towards success.
+    </p><br>
+
+    <!-- Navigation buttons -->
+    <a href="index.html" title="Home">
+        <img src="button/Homebutton.png" alt="Home" />
+    </a>
+    <a href="about.html" title="About">
+        <img src="button/aboutbutton.png" alt="About" />
+    </a>
+    <a href="education.html" title="Education">
+        <img src="button/Educationbutton.png" alt="Education" />
+    </a>
+    <a href="experience.html" title="Experience">
+        <img src="button/Experiencebutton.png" alt="Experience" />
+    </a>
+    <a href="family.html" title="Family">
+        <img src="button/Familybutton.png" alt="Family" />
+    </a>
+    <a href="gallery.html" title="Gallery">
+        <img src="button/Gallerybutton.png" alt="Gallery" />
+    </a>
+</header>
+
+<div class="card">
+    <h2>Family Overview</h2>
+    <p>
+        My family has always been my source of motivation and emotional strength.
+        Their continuous encouragement helps me remain focused, disciplined,
+        and confident in achieving my goals.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Family Members</h2>
+
+    <table>
+        <tr>
+            <th>Relation</th>
+            <th>Name</th>
+            <th>Occupation</th>
+        </tr>
+        <tr>
+            <td>Father</td>
+            <td>Nazar bin Zulkifly</td>
+            <td>Retired</td>
+        </tr>
+        <tr>
+            <td>Mother</td>
+            <td>Paizah binti Muji</td>
+            <td>Housewife</td>
+        </tr>
+        <tr>
+            <td>Sibling</td>
+            <td>Faris bin Nazar</td>
+            <td>Businessman</td>
+        </tr>
+        <tr>
+            <td>Sibling</td>
+            <td>Farah Izzati binti Nazar</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Sibling</td>
+            <td>Siti Amelia binti Nazar</td>
+            <td>-</td>
+        </tr>
+    </table>
+</div>
+
+<div class="card">
+    <h2>Family Values & Influence</h2>
+    <ul>
+        <li>Strong family bonding and mutual respect</li>
+        <li>Encouragement towards education and self-growth</li>
+        <li>Emphasis on honesty, discipline, and responsibility</li>
+        <li>Support during challenges and important decisions</li>
+    </ul>
+</div>
+
+<div class="family-img">
+    <img src="images/familypic.png" alt="My Family Photo" />
+</div>
+
+<p class="quote">
+    “A strong family foundation builds a confident and responsible individual.”
+</p>
+
+<footer>
+    © 2025 | Created for IMD318 Individual Project Assignment
+</footer>
+
+</body>
+</html>
